@@ -1,0 +1,11 @@
+El tracert utiliza el ping para testear cada servidor
+Hosting compartido - Muchas páginas de internet 
+VPS - Servidor virtual
+Dedicado - Cloud - Máquina a disposición del cliente
+
+
+El formulario se utiliza siempre el method ="post" porque "get" se visualiza
+el envío de datos y en enctype="multipart/form-data" para img
+
+Checkbox que inicie en true:
+type="checkbox" 

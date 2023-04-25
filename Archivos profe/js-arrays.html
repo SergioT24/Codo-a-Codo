@@ -1,0 +1,133 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays</title>
+    
+     </head>
+  <body>
+    <h1>Arrays</h1>
+     
+     <script>
+  let frase = ["posiciones", "se cuentan", "Las", "array", "cero.", "a partir", "del"];
+
+let concatenaFrase = frase[2] + " " + frase[0] + " " + frase[6]
+	+ " " + frase[3] + " " + frase[1] + " " + frase[5] + " " +
+	frase[6] + " " + frase[4];
+
+
+document.write(concatenaFrase);
+document.write(frase[2]);
+document.write("<br />");
+
+
+document.write("<br />");
+
+     </script> 
+     
+<script>
+var granPoblacion = ["Madrid", "Barcelona", "Valencia", "Sevilla"];       //declaramos el array
+for (i=0; i<granPoblacion.length; i++) {
+    document.write(granPoblacion[i]);
+    
+}
+document.write("<br />");
+document.write("variable GP: "+granPoblacion[0]+" "+granPoblacion[1]);
+document.write("<br />");
+document.write("granPoblacion[2]: " + granPoblacion[2] + "<br>");         //imprimimos el valor '2'
+granPoblacion[2] = "Málaga";                                              // cambiamos el valor '2'
+document.write("Cambiamos Valencia por: " + granPoblacion[2] +"<br>");    //imprimimos el nuevo valor '2'
+granPoblacion[4] = "Zaragoza";                                     //añadimos el valor Zaragoza al array
+document.write("Hemos añadido al array: " + granPoblacion[4]);            //imprimimos el nuevo valor
+
+document.write("<br />");
+document.write("<br />"); 
+</script>
+
+ <h1>Ejercicio Arrays</h1>
+ <p>Declara un array que vamos a llamar “clasificaciones” con los siguientes valores:
+    Ana, Oswaldo, Raúl, Celia, María, Antonio
+    (vamos a suponer que es el orden de clasificación de un concurso, en un momento dado)
+    Imprime la clasificación actual</p>
+
+<p>El concurso continua, y se van modifican esas posiciones anteriores. Debemos cambiar en el array:
+
+    Celia adelanta a Raúl
+    Antonio es descalificado y se elimina del concurso
+    Detrás de Ana y antes de Oswaldo se clasifican dos nuevos concursantes: Roberto y Amaya, en ese orden
+    Hay una nueva participante que pasa a encabezar la clasificación: Marta
+    Imprime la clasificación actualizada y comprueba que se ha hecho correctamente</p>    
+   
+   <h2>Solucion 1</h2> 
+    
+     <script>
+
+  //declaramos el array y le asignamos los valores
+var clasificacion = ["Ana", "Oswaldo", "Raúl", "Celia", "María", "Antonio "];
+ 
+//imprimimos cada uno de los valores del array (comienza por cero!)
+document.write("Clasificación actual" + "<br>");           //"<br>" nos hace salto de linea
+document.write("1. " + clasificacion[0] + "<br>");   
+document.write("2. " + clasificacion[1] + "<br>");
+document.write("3. " + clasificacion[2] + "<br>");
+document.write("4. " + clasificacion[3] + "<br>");
+document.write("5. " + clasificacion[4] + "<br>");
+document.write("6. " + clasificacion[5] + "<br>");
+ 
+//introducimos los cambios de clasificación
+clasificacion[2] = "Celia";
+clasificacion[3] = "Raúl";
+clasificacion.pop();
+clasificacion.splice(1, 0, "Roberto", "Amaya");
+clasificacion.unshift("Marta");
+ 
+//volvemos a imprimir la clasificación
+document.write("<br>"); //separamos con una linea en blanco la 2ª clasificación de la 1ª
+document.write("Clasificación actualizada" + "<br>");
+document.write("1. " + clasificacion[0] + "<br>"); 
+document.write("2. " + clasificacion[1] + "<br>");
+document.write("3. " + clasificacion[2] + "<br>");
+document.write("4. " + clasificacion[3] + "<br>");
+document.write("5. " + clasificacion[4] + "<br>");
+document.write("6. " + clasificacion[5] + "<br>");
+document.write("7. " + clasificacion[6] + "<br>");
+document.write("8. " + clasificacion[7] + "<br>"); 
+              
+    </script>
+ <h2>Solucion 2</h2>  
+<script>
+ /*   for (var i = 0; i < clasificacion.length; i++) {
+document.write(i+1 + ". " + clasificacion[i] + "<br>");
+} */
+</script>
+
+
+ <h2>Solucion 3</h2>   
+<script>
+
+var clasificacion = ["Ana", "Oswaldo", "Raúl", "Celia", "María", "Antonio "];
+ 
+document.write("Clasificación actual" + "<br>"); 
+mostrarClasificacion();  //llamamos a la función para imprimir clasificación
+ 
+clasificacion[2] = "Celia";
+clasificacion[3] = "Raúl";
+clasificacion.pop();
+clasificacion.splice(1, 0, "Roberto", "Amaya");
+clasificacion.unshift("Marta");
+ 
+document.write("<br>"); //separamos con una linea en blanco la 2ª clasificación de la 1ª
+document.write("Clasificación actualizada" + "<br>"); 
+mostrarClasificacion(); 
+ 
+//declaramos la función
+function mostrarClasificacion() {
+    for (var i = 0; i < clasificacion.length; i++) {
+    document.write(i+1 + ". " + clasificacion[i] + "<br>");
+    }
+}
+
+</script> 
+ 
+    
+  </body>
+</html>

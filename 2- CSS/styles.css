@@ -1,0 +1,338 @@
+/*Variables para colores*/
+:root{
+    --colorprimary: pink;
+    --colorgradient: rgb(255, 153, 175);
+    --colorgradient2: hsl(66, 15%, 87%);
+    --colortext1: lightblue;
+    --colorlink: blue;
+    --colorvisited: aqua;
+    --colorhover: rgb(26, 125, 150);
+    --width: 300px;
+    --padding: 10px;
+    --bgcolor: rgb(52,52,52);
+    --hovercolor: rgb(23,23,23);
+    --width-collapsed: 50px;
+}
+/*\Variables para colores*/
+/*Header*/
+header{
+    top: 0px;
+    text-align: center;
+    position: sticky; 
+    background-color: rgba(127, 193, 250, 0.151);
+}
+.container-fluid{
+    background-color: rgba(127, 193, 250, 0.041);
+    font-weight: bold;
+    width: 100%;
+    font-size: 150%;
+}
+.nav-item :hover{
+    margin-top: 1.5%;
+    text-decoration: underline;
+}
+.vertical-div{
+    vertical-align: middle;
+}
+.logo{
+    text-align: left;
+}
+/*Header*/
+footer{
+    position: sticky;
+    font-weight: bold;
+    text-align: center;
+}
+footer,header {
+    background-color: var(--colorprimary);
+    font-weight: bold;  
+    box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0.5);
+}
+.carousel-inner{
+    transition: opacity .1s;
+}
+.form-control{
+    width: 20%;
+}
+.form-check{
+    margin-left: 1%;
+    width: 50%;
+}
+.div-img{
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 30%;
+}
+.img-fluid{
+    margin: 1em;
+}
+@media(max-width: 990px){
+    .div-img{
+        margin: 1em 1em 1em 1em;
+        display: flex;
+        justify-content:stretch;
+        width: 25%;
+        height: 25%;
+    }
+    .logo{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width: 400px){
+    .div-img{
+        width: 20%;
+        height: 20%;
+    }
+}
+@media(max-width: 240px){
+.div-img{
+    width: 12%;
+    height: 12%;
+    margin: 0;
+}
+.logo{
+    width: 100%;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: space-between;
+}
+}
+.titulo-form{
+    font-size: 300%;
+    font-weight: bold;
+    padding: 1%;
+    margin-bottom: 2%;
+    color: rgb(134, 54, 68);
+}
+
+.row{
+    width: 80%;
+    margin-left: .5%;
+}
+.form-control{
+    width: 40%;
+}
+body {
+    line-height: none;
+    font: bold;
+    background-color: rgba(127, 193, 250, 0.151);
+    padding: 0;
+    margin:0;
+    margin-left: var(--width-collapsed);
+}
+.body-expanded{
+    margin-left: var(--width);
+}
+#sidemenu{
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0%;
+}
+/* HEADER Menu desplegable*/
+#sidemenu #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+}
+#sidemenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#sidemenu #header #title, #sidemenu #header #menu-btn{
+    vertical-align: middle;
+}
+#sidemenu #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+#sidemenu #header #menu-btn :hover{
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #header #menu-btn #btn-hamburger{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+/* PROFILE Menu desplegable*/
+#sidemenu #profile{
+    border-bottom: solid 1px var(--hovercolor);
+    padding: var(--padding) 0;
+    text-align: center;
+}
+#sidemenu #profile #photo{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+}
+
+#sidemenu #profile #photo img{
+    border-radius: 50%;
+    width: 60%;
+}
+#sidemenu #profile #photo, #sidemenu #profile #name{
+    font-size: 24px;
+    padding: var(--padding);
+    overflow: hidden;
+}
+#sidemenu #menu-items{
+    overflow: hidden;
+}
+#sidemenu #menu-items .item .icon{
+    display: inline-block;
+}
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .title
+{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+#sidemenu #menu-items .item a:hover{
+    background-color: var(--hovercolor);
+}
+#sidemenu #menu-items .item .icon{
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width);
+}
+
+#sidemenu #menu-items .item .icon img{
+    width: 100%;
+}
+#sidemenu #menu-items .item.separator{
+    height: 1px;
+    border-bottom: solid 1px var(--hovercolor);
+    margin: 15px 0;
+}
+.menu-expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.menu-expanded #header #title {
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding);    
+}
+.menu-expanded #header #title span{
+    width: calc(var(--width) - var(--width-collapsed)-5px);
+    overflow: hidden;
+    display: inline-block;
+}
+.menu-expanded #profile #name{
+    width: 200px;
+}
+.menu-expanded #profile #name{
+    width: 100%;
+}
+.menu-collapsed{
+    width: var(--width-collapsed);
+}
+.menu-collapsed #header #title{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+.menu-collapsed #header #name{
+    display: none;
+}
+.menu-collapsed .item{
+    width: 100px;
+}
+
+
+#sidemenu #menu-items .item .title{
+    padding: var(--padding) 0;
+}
+
+
+/*Navegador*/
+.navegador {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: colums;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height:1.2em; /*La altura dependerá de lo que requieras*/
+    padding: 0.13em 0.13em 0.13em;
+    background: linear-gradient(135deg, var(--colorgradient),var(--colorgradient2));
+    background-size: 400%; /*Asignamos un ancho para el background del 300% y altura 100%*/
+    animation: cambiar 1s ; /*'gradient' es el nombre de la animación que crearemos, tarda en completarse 15s y vuelve a empezar infinitamente*/
+    text-decoration:none;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.3;
+    color: var(--colortext1);
+}
+.navegador :link{
+    color: var(--colorlink);
+}
+.navegador :visited{
+    color: var(--colorvisited);
+}
+.navegador :hover{
+    height:1.5em; /*La altura dependerá de lo que requieras*/
+    background-size: 400%; /*Asignamos un ancho para el background del 300% y altura 100%*/
+    animation: cambiar 1.5s ; /*'gradient' es el nombre de la animación que crearemos, tarda en completarse 15s y vuelve a empezar infinitamente*/
+   
+    border-radius: 1em;
+    position: relative;
+    font: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--colorhover);
+}
+@keyframes cambiar{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+/*\Navegador*/
+
+/*Slider*/
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: black;
+    border-radius: 1.5em;
+    width: 40%;
+}
+.carousel {
+    height: 20%;
+    align-items:stretch;
+    z-index: -1;
+}
+/*Slider*/
+
+/*IMG principales*/
+.img{
+        width: 20%;
+        height: 20%;
+        object-fit: cover;
+        text-align: left;
+}
