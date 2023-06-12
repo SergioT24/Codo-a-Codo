@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
       boton.addEventListener('click', () => {
         const item = boton.parentNode;
         const nombre = item.querySelector('.nombre').textContent;
-        const precio = parseInt(item.querySelector('.precio').textContent.replace('$', ''));
+        const precio = parseInt(item.querySelector('.precio').textContent.replace('$', '').replace('.',''));
         agregarProducto(nombre, precio);
         actualizarCarrito();
       });
