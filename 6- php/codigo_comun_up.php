@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- codigo_comun_up.php -->
+
+
 
 <head>
-  <meta name="viewport  " content="with=device-width, initial-scale=1.0">
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IF=edge">
   <meta charset="utf-8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -68,46 +69,3 @@
     </nav>
     </nav>
   </header>
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../1- html/img/2x1 bikinis.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="../1- html/img/Pijamas banners.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-  </div>
-  <div class="vertical-div">
-
-    <a href="../1- html/bombachas.html"><button type="button" class="btn btn-info">Bombachas</button></a>
-    <a href="../1- html/boxer.html"><button type="button" class="btn btn-warning">Bóxer</button></a>
-    <a href="../1- html/conjuntos.html"><button type="button" class="btn btn-success">Conjuntos</button></a>
-    <a href="../1- html/medias.html"><button type="button" class="btn btn-light">Medias</button></a>
-    <a href="../1- html/pijamas.html"><button type="button" class="btn btn-danger">Pijamas</button></a>
-    <a href="../1- html/remeras.html"><button type="button" class="btn btn-primary">Remeras</button></a>
-    <a href="../1- html/sublimaciones.html"><button type="button" class="btn btn-secondary">Sublimaciones</button></a>
-    <a href="../1- html/tazas.html"><button type="button" class="btn btn-dark">Tazas</button></a>
-  </div>
-  <footer> Lengerie Luxury
-    <br>
-    <a class="link-FB" href="https://www.facebook.com/LengerieLuxury" target="_blank"><img src="../1- html/img/fb.svg"
-        alt="Logo Facebook" width=10px></a>
-    <a class="link-IG" href="https://www.instagram.com/lengerieluxuryok/" target="_blank"><img
-        src="../1- html/img/ig.svg" alt="Logo Instagram" width=10px></a>
-    <a href="https://web.whatsapp.com/send?phone=+541150157955" target="_blank">
-
-      <img src="../1- html/img/wp.svg" alt="Logo de WhatsApp" width="20"></a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <script src="../4- javascript/script.js">
-
-  </script>
-</body>
-
-</html>

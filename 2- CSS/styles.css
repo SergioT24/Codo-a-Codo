@@ -47,6 +47,7 @@ p {
 .vertical-div {
   vertical-align: middle;
   text-align: center;
+  margin-top: 2em;
 }
 
 img.logo {
@@ -162,6 +163,11 @@ header {
   font-size: 24px;
   color: #333;
 }
+.table{
+  margin-top: 3em;
+  justify-content: center;
+}
+
 .dropdown-menu {
   padding: 10px;
   font-size: 14px;
