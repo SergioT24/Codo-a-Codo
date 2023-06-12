@@ -53,8 +53,21 @@
               </li>
             </ul>
             <form class="d-flex">
-              <a class="nav-link active" aria-current="page" id="buy" id="compras" href="../1- html/buy.html"> <img src="../1- html/img/bolsa_compras.png" alt="Logo carrito de compras" width="25"></a>
-              
+              <div class="dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="buy.html">
+                    <img src="../1- html/img/bolsa_compras.png" alt="Logo carrito de compras" width="25">
+                  </a>
+                  <span id="cantidadProductos" class="badge bg-secondary">0</span>
+                </a>
+  
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink" id="detalleProductos">
+                  <ul id="listaProductos" class="list-group"></ul>
+                  <div class="dropdown-divider"></div>
+                  <p class="dropdown-item">Total: $<span id="totalPrecio">0</span></p>
+                </div>
+              </div>
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
@@ -64,24 +77,25 @@
     </nav>
     </header>
     <div class="div-img">
-      <div class="item">
-        <img src="../1- html/img/pijama3.jpeg" class="img-fluid" alt="...">
+      <div class="item" data-producto-id="1">
+        <img src="../1- html/img/taza3.jpg" class="img-fluid" alt="...">
         <div class="precio">
-          <p id="precio">$1.200</p>
-          <a href="buy.html" class="boton-comprar">Comprar</a>
+          <span class="nombre">Sublimación producto 1</span>
+          <span class="precio">$1.200</span>
+          <a class="boton-comprar btn btn-primary">Comprar</a>
         </div>
-        </div>
-        <div class="item">
+      </div>
+      <div class="item" data-producto-id="2">
         <img src="../1- html/img/remeras2.jpeg" class="img-fluid" alt="...">
         <div class="precio">
-          <p id="precio">$1.200</p>
+          <p id="precio">$1.300</p>
           <a href="buy.html" class="boton-comprar">Comprar</a>
         </div>
         </div>
-        <div class="item">
-        <img src="../1- html/img/remeras3.jpeg" class="img-fluid" alt="...">
+        <div class="item" data-producto-id="3">
+        <img src="../1- html/img/pijama2.jpeg" class="img-fluid" alt="...">
         <div class="precio">
-          <p id="precio">$1.200</p>
+          <p id="precio">$1.400</p>
           <a href="buy.html" class="boton-comprar">Comprar</a>
         </div>
         </div>
@@ -93,8 +107,12 @@
         <a href="https://web.whatsapp.com/send?phone=+541150157955" target="_blank">
           <img src="../1- html/img/wp.svg" alt="Logo de WhatsApp" width="20"></a>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="../4- javascript/script.js"></script>
 </body>
 </html>

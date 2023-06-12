@@ -17,11 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     function agregarProducto(nombre, precio) {
-      const productoExistente = carrito.find((producto) => producto.nombre === nombre);
-      if (productoExistente) {
-        productoExistente.cantidad++;
+      const productoExiste = carrito.find((producto) => producto.nombre === nombre);
+      if (productoExiste) {
+        productoExiste.cantidad++;
       } else {
         carrito.push({ nombre: nombre, precio: precio, cantidad: 1 });
+    
       }
       total += precio;
     }
@@ -31,9 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
       carrito.forEach((producto) => {
         const li = document.createElement('li');
         li.innerHTML = `${producto.cantidad} ${producto.nombre} $${producto.precio}`;
+        console.log(producto.precio);
         listaProductos.appendChild(li);
       });
-      cantidadProductos.textContent = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+      cantidadProductos.textContent = carrito.reduce((total, producto) => total + producto.cantidad,0);
       totalPrecio.textContent = total;
     }
   });  
