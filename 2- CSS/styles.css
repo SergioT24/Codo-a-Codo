@@ -127,6 +127,9 @@ header {
   font-size: 18px;
   margin-top: 10px;
 }
+p{
+  background: none;
+}
 .precio {
   bottom: 0;
   left: 0;
@@ -159,7 +162,7 @@ header {
   text-align: center;
 }
 
-.banner h1 {
+.banner h2 {
   font-size: 24px;
   color: #333;
 }
@@ -250,11 +253,12 @@ header {
   }
 }
 .titulo-form {
-  font-size: 300%;
+  font-size: 200%;
   font-weight: bold;
   padding: 1%;
   margin-bottom: 2%;
-  color: rgb(134, 54, 68);
+  color: black;
+  text-shadow: 2px 3px 4px;
 }
 
 .row {
