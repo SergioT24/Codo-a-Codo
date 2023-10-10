@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Shop - FunkoShop</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./index.html"><img src="multimedia/branding/logo_light_horizontal.svg" alt="FUNKOSHOP"></a>
+        </div>
+        <ul>
+            <li>
+                SHOP <span id="prev" class="fa-solid fa-angle-down" href="shop.html"></span>
+            </li>
+            <li>CONTACTO</li>
+            <li>LOGIN</li>
+            <li><img src="./multimedia/icons/cart-icon.svg" alt="carrito"></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="contenedor-items">
+            <aside>
+                <form action="">
+                    <h2>BUSCAR</h2>
+                    <input placeholder=" Item o categoria" class="browser">
+                    <h2>ORDENAR POR</h2>
+                    <select name="brands" id="brands" class="selection">
+                        <option value="sinvalor" placeholder=" Mayor a menor">Mayor a menor</option>
+                        <option value="mayor">Mayor precio</option>
+                        <option value="menor">Menor precio</option>
+                        <option value="ordenar">Ordenar A-Z</option>
+                    </select>
+                    <h2>PRECIO</h2>
+                    <label>MIN</label>
+                        <input type="number" value="min" name="precio" class="precio">
+                    <label>MAX</label>
+                        <input type="number" value="max" name="precio" class="precio">
+                    <h2>FILTRAR</h2>
+                    <label><input type="checkbox" value="nuevos" name="filtro">NUEVOS</label>
+                    <label><input type="checkbox" value="ofertas" name="filtro">OFERTAS</label>
+                    <label><input type="checkbox" value="edicion especial" name="filtro">EDICIÓN ESPECIAL</label>
+                </form>
+            </aside>
+            <div>
+                <div class="lanzamientos">
+                    <div class="lanzCard">
+                        <div class="lanzCard-1">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/star-wars/trooper-1.webp" alt="card-trooper">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">STAR WARS</p> <!-- COLECCION -->
+                                <h3 class="producto">STORMTROOPER LIGHTSABER</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                        <div class="lanzCard-2">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/pokemon/pidgeotto-1.webp" alt="card-pidgeotto">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">POKEMON</p><!-- COLECCION -->
+                                <h3 class="producto">PIDGEOTTO</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                        <div class="lanzCard-3">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/harry-potter/luna-1.webp" alt="card-luna">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">HARRY POTTER</p><!-- COLECCION -->
+                                <h3 class="producto">LUNA LOVEGOOD LION MASK</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p> <!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="lanzamientos">
+                    <div class="lanzCard">
+                        <div class="lanzCard-1">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/star-wars/trooper-1.webp" alt="card-trooper">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">STAR WARS</p> <!-- COLECCION -->
+                                <h3 class="producto">STORMTROOPER LIGHTSABER</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                        <div class="lanzCard-2">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/pokemon/pidgeotto-1.webp" alt="card-pidgeotto">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">POKEMON</p><!-- COLECCION -->
+                                <h3 class="producto">PIDGEOTTO</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                        <div class="lanzCard-3">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/harry-potter/luna-1.webp" alt="card-luna">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">HARRY POTTER</p><!-- COLECCION -->
+                                <h3 class="producto">LUNA LOVEGOOD LION MASK</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p> <!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="lanzamientos">
+                    <div class="lanzCard">
+                        <div class="lanzCard-1">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/star-wars/trooper-1.webp" alt="card-trooper">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">STAR WARS</p> <!-- COLECCION -->
+                                <h3 class="producto">STORMTROOPER LIGHTSABER</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                        <div class="lanzCard-2">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/pokemon/pidgeotto-1.webp" alt="card-pidgeotto">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">POKEMON</p><!-- COLECCION -->
+                                <h3 class="producto">PIDGEOTTO</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                        <div class="lanzCard-3">
+                            <div>
+                                <section class="card">
+                                    <img src="./multimedia/harry-potter/luna-1.webp" alt="card-luna">
+                                    <p class="cajaNuevo">NUEVO</p>
+                                </section>
+                                <p class="coleccion">HARRY POTTER</p><!-- COLECCION -->
+                                <h3 class="producto">LUNA LOVEGOOD LION MASK</h3><!-- PRODUTO -->
+                                <p class="precio">$ 1799,99</p> <!-- PRECIO -->
+                                <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="./shop.html" target="_blank">SHOP</a></li>
+                <li>INGRESAR</li>
+                <li>CONTACTO</li>
+            </ul>
+            <span>
+                <img src="./multimedia/branding/isotype.svg" alt="Logo">
+            </span>
+        </div>
+        <p>All roghts reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Raleway:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Items - FunkoShop</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html"><img src="multimedia/branding/logo_light_horizontal.svg" alt="FUNKOSHOP" ></a>
+        </div>
+        <ul>
+            <li>
+                <a href="./shop.html" target="_blank">SHOP</a> <span id="prev" class="fa-solid fa-angle-down"></span>
+            </li>
+            <li><a href="#">CONTACTO</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <a href="./carrito.html" target="_blank">
+                <li><img src="./multimedia/icons/cart-icon.svg" alt="carrito"></li>
+            </a>
+        </ul>
+    </header>
+
+    <main>
+        <section id="seleccionado">
+            <img src="./multimedia/star-wars/baby-yoda-1.webp" alt="card-baby-yoda">
+        </section>
+        <section class="infos">
+            <p class="coleccion-info">STAR WARS</p> <!-- COLECCION -->
+            <p class="producto-info" >BABY YODA BLUEBALL</p><!-- PRODUTO -->
+            <p class="descripcion-info">Figura colecionable de Baby Yoda (Grogu) - The Mandalorion Saga, edición limitada.</p>
+            <p class="precio-info">$ 1799,99</p><!-- PRECIO -->
+            
+           <div class="cantd-prod">
+                <span id="contador" class="contador">0</span>
+                <div class="cantidad">
+                    <button id="mas" class="mas"> + </button>
+                    <button id="menos" class="menos"> - </button>
+                </div>
+                <button class="agregar" type="submit">Agregar al Carrito</button>
+           </div>
+
+            <p class="pago-info">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+        </section>
+    </main>
+    <section class="producto-rel">
+        <h1>PRODUCTOS RELACIONADOS</h1>
+        <div class="productosCards">
+            <div class="product-1">
+                <div>
+                    <section class="card">
+                        <img src="./multimedia/star-wars/trooper-1.webp" alt="card-trooper">
+                        <p class="cajaNuevo">NUEVO</p>
+                    </section>
+                    <p class="coleccion">STAR WARS</p> <!-- COLECCION -->
+                    <p class="producto" >STORMTROOPER LIGHTSABER</p><!-- PRODUTO -->
+                    <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                    <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                </div>
+            </div>
+            <div class="product-2">
+                <div>
+                    <section class="card">
+                        <img src="multimedia/pokemon/pidgeotto-1.webp" alt="card-pidgeotto">
+                        <p class="cajaNuevo">NUEVO</p>
+                    </section>
+                    <p class="coleccion">POKEMON</p><!-- COLECCION -->
+                    <p class="producto">PIDGEOTTO</p><!-- PRODUTO -->
+                    <p class="precio">$ 1799,99</p><!-- PRECIO -->
+                    <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                </div>
+            </div>
+            <div class="product-3">
+                <div>
+                    <section class="card">
+                        <img src="multimedia/harry-potter/luna-1.webp" alt="card-luna">
+                        <p class="cajaNuevo">NUEVO</p>
+                    </section>
+                    <p class="coleccion">HARRY POTTER</p><!-- COLECCION -->
+                    <p class="producto" >LUNA LOVEGOOD LION MASK</p><!-- PRODUTO -->
+                    <p class="precio">$ 1799,99</p> <!-- PRECIO -->
+                    <p class="pago">3 CUOTAS SIN INTERÉS</p><!-- PAGO -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="./shop.html" target="_blank">SHOP</a></li>
+                <li><a href="#">INGRESAR</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+            <span>
+                <img src="./multimedia/branding/isotype.svg" alt="Logo">
+            </span>
+        </div>
+        <p>All roghts reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    
+</body>
+</html>

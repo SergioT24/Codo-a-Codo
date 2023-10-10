@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Raleway&display=swap');
+
+:root {
+    /*PALETTE*/
+    --primary-solid: #FF3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.5);
+
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: #ffffff;
+
+    /*TYPOGRAPHY*/
+    --base-font: "inter", sans-serif;
+    --alternative-font: "Raleway", sans-serif;
+
+    /*FONT-SIZE*/
+
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3.0em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /*SPACINGS*/
+    --spacings-128: 12.8rem;
+    --spacings-68: 6.8rem;
+    --spacings-36: 3.6rem;
+    --spacings-28: 2.8rem;
+    --spacings-16: 1.6rem;
+    --spacings-12: 1.2rem;
+    --spacings-8: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    /* NORMALIZAR ESTILOS ESTO HACE QUE 1EM SEA 10PX (VALE 16PX)*/
+    color: var(--dark-solid);
+}
+
+#prev {
+    font-size: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 1440;
+    height: 144px;
+    background-color: #30343f;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header>div {
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    gap: 20px;
+}
+
+div.banner {
+    width: 100%;
+    height: 388px;
+}
+
+.banner {
+    background-image: url(multimedia/banner-edit.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+
+div.banner div {
+    width: 397px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10%;
+    margin-left: 100px;
+}
+
+.banner h2,
+p {
+    font-family: var(--alternative-font);
+}
+
+.banner h2 {
+    color: #f5f5f5;
+    width: 38px;
+    font-size: 3.8em;
+    font-weight: 700;
+    display: contents;
+}
+
+.banner p {
+    width: 400px;
+    font-size: 1.8rem;
+    font-weight: 350;
+    color: #f5f5f5;
+    line-height: 21.13px;
+}
+
+.banner button {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 211px;
+    height: 47px;
+    background-color: #f5f5f5;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.banner button>p {
+    text-align: center;
+}
+
+.banner button>p>a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    font-size: 19px;
+    font-family: var(--base-font);
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+div.reflejos {
+    max-width: 1220px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+div.reflejos h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 4.6rem;
+    line-height: 54px;
+}
+
+div.reflejos p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2.4em;
+    margin-top: 10px;
+    line-height: 28.18px;
+}
+
+div.dados {
+    width: 645px;
+    height: 300px;
+}
+
+.parDados {
+    color: black;
+    font-weight: 100;
+    border-bottom: 3px solid rgb(218, 123, 0);
+    padding-bottom: 25px;
+}
+
+div p.btnDados {
+    background-color: #30343f;
+    color: #f5f5f5;
+    height: 65px;
+    width: 291.81px;
+    margin-top: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: var(--base-font);
+}
+
+div.lanzamientos {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 90px;
+}
+
+.lanzamientos h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-align: left;
+}
+
+div.lanzamientos img {
+    width: 350px;
+    height: 360px;
+}
+
+div.lanzCard {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    height: 400px;
+}
+
+
+
+div p {
+    color: black;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+h3.producto {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 21.78px;
+}
+
+
+p.pago {
+    color: var(--secondary-solid);
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: var(--base-font);
+}
+
+footer {
+    width: 100%;
+    height: 343px;
+    background-color: #30343f;
+
+}
+
+footer li {
+    margin-bottom: 05px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+
+footer img {
+    height: 146px;
+    width: 143px;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 110px;
+    padding-top: 40px;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #f5f5f5;
+    padding-bottom: 20px;
+}
+
+div>img.logo {
+    width: 80px;
+    height: 65px;
+}
+
+div>img.vector {
+    width: 270px;
+    height: 30px;
+}
+
+header>ul {
+    display: flex;
+    color: #f5f5f5;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 54px;
+    margin-right: 30px;
+    padding: 5px 5px;
+    width: 406px;
+    height: 31px;
+}
+
+ul>li {
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 23.48px;
+    font-size: 20px;
+}
+
+ul>li>span {
+    font-size: .5rem;
+    vertical-align: 20%;
+}
+
+ul>li>a {
+    color: #f5f5f5;
+}
+
+/* ITEMS */
+/*
+main {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin: 40px auto;
+    align-items: center;
+    text-align: right;
+}
+*/
+.contenedor-items {
+    display: grid; 
+    grid-template-columns: 20% 80%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."; 
+}
+aside{
+    width: 243px;
+}
+
+form{
+    width: 243px;
+    text-align: left;
+    margin-left: 110px;
+    margin-top: 68px;
+}
+input{
+    border-radius: 6px;
+    border: 2px solid var(--dark-solid);
+
+}
+.precio{
+    width: 59.14px;
+    height: 27.52px;
+}
+.selection, .browser{
+    width: 243.03px;
+    height: 44.28px;
+    border-radius: 6px;
+}
+section.infos {
+    font-family: 'Inter', sans-serif;
+
+}
+
+section p.coleccion-info {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p.producto-info {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 5px 0 20px 0;
+}
+
+p.descripcion-info {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p.precio-info {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section div.cantd-prod {
+    gap: 10px;
+    display: flex;
+    width: 350px;
+    height: 40px;
+    align-items: center;
+}
+
+.cantd-prod span {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+div.cantidad {
+    display: flex;
+    flex-direction: column;
+}
+
+div button.mas {
+    width: 18px;
+    height: 16px;
+    text-align: center;
+}
+
+div button.menos {
+    width: 18px;
+    height: 16px;
+    text-align: center;
+}
+
+button.agregar {
+    width: 140px;
+    height: 35px;
+    background-color: #FF3333;
+    border-color: transparent;
+    color: #f5f5f5;
+}
+
+p.pago-info {
+    color: #1D84B5;
+    font-size: 0.6rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+section.producto-rel {
+    width: 1220px;
+    height: 630px;
+    margin: auto;
+
+}
+
+.producto-rel h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+div.productosCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+section.card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 400;
+    width: 350px;
+}
+
+p.cajaNuevo {
+    font-family: var(--base-font);
+    color: white;
+    height: 30px;
+    width: 96px;
+    font-weight: 500px;
+    background-color: #FF3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 14px;
+    line-height: 16.94px;
+    top: 0%;
+    left: 75%;
+}
+
+div p {
+    color: var(--dark-900);
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+p.coleccion {    
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+p.producto {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 5px;
+
+}
+
+p.precio {
+    color: var(--dark-900);
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: var(--base-font);
+
+}
